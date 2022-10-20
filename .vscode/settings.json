@@ -1,0 +1,8 @@
+{
+    "files.associations": {
+        "*.cpp": "cpp",
+        "xstring": "cpp",
+        "vector": "cpp"
+    },
+    "python.formatting.provider": "black"
+}
