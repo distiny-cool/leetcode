@@ -31,7 +31,3 @@ public:
 };
 // @lc code=end
 
-int main()
-{
-    return 0;
-}

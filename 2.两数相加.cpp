@@ -1,12 +1,4 @@
 /*
- * @Descripttion:
- * @version:
- * @Author: distiny
- * @Date: 2022-03-08 18:44:33
- * @LastEditors: distiny
- * @LastEditTime: 2022-03-08 20:25:14
- */
-/*
  * @lc app=leetcode.cn id=2 lang=cpp
  *
  * [2] 两数相加
@@ -15,8 +7,7 @@
 // @lc code=start
 
 // Definition for singly-linked list.
-// struct ListNode
-// {
+// struct ListNode {
 //     int val;
 //     ListNode *next;
 //     ListNode() : val(0), next(nullptr) {}
@@ -24,11 +15,9 @@
 //     ListNode(int x, ListNode *next) : val(x), next(next) {}
 // };
 
-class Solution
-{
+class Solution {
 public:
-    ListNode *addTwoNumbers(ListNode *l1, ListNode *l2)
-    {
+    ListNode* addTwoNumbers(ListNode* l1, ListNode* l2) {
         ListNode *ans = nullptr;
         ListNode *tail = nullptr, *head = nullptr;
         int temp;
@@ -106,3 +95,4 @@ public:
     }
 };
 // @lc code=end
+

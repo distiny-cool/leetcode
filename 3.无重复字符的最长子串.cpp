@@ -1,3 +1,11 @@
+// @before-stub-for-debug-begin
+#include <vector>
+#include <string>
+// #include "commoncppproblem3.h"
+
+using namespace std;
+// @before-stub-for-debug-end
+
 /*
  * @lc app=leetcode.cn id=3 lang=cpp
  *
@@ -5,6 +13,8 @@
  */
 
 // @lc code=start
+#include <unordered_set>
+
 class Solution {
 public:
     int lengthOfLongestSubstring(string s) {
