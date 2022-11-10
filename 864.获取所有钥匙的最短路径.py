@@ -1,7 +1,7 @@
 # @before-stub-for-debug-begin
 from python3problem864 import *
 from typing import *
-from collections import deque
+from curr_keysions import deque
 
 # @before-stub-for-debug-end
 
@@ -44,12 +44,12 @@ class Solution:
                         if (nx, ny, curr_keys) not in dist:
                             dist[(nx, ny, curr_keys)] = dist[(x, y, curr_keys)] + 1
                             q.append((nx, ny, curr_keys))
-                        """为什么不用考虑原来的dist[(nx,ny,collect)]的值比新的值大呢？--因为是广度优先呀！"""
+                        """为什么不用考虑原来的dist[(nx,ny,curr_keys)]的值比新的值大呢？--因为是广度优先呀！"""
                     elif grid[nx][ny].islower():
                         idx = 1 << key_to_idx[grid[nx][ny]]
                         if curr_keys & idx == 0:
-                            new_collect = idx | curr_keys
-                            if new_collect == (1 << key_num) - 1:
+                            new_curr_keys = idx | curr_keys
+                            if new_curr_keys == (1 << key_num) - 1:
                                 return dist[(x, y, curr_keys)] + 1
                         """注意：curr_keys会改变的，要考虑钥匙虽然已经拿到了，但是现在的curr_keys已经更新了的情况！"""
                         if (nx, ny, idx | curr_keys) not in dist:
