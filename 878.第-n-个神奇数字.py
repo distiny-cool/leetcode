@@ -16,7 +16,7 @@ class Solution:
     def nthMagicalNumber(self, n: int, a: int, b: int) -> int:
         g=lcm(a,b)
         l=min(a,b)
-        r=n*min(a,b)
+        r=n*l
         while l<=r:
             mid=(l+r)//2
             if mid//a+mid//b-mid//g>=n:
