@@ -34,7 +34,7 @@ class Solution:
             ans[n] = curr
         return ans
 
-# 二分法
+# 二分查找
 class Solution2:
     def fullBloomFlowers(self, flowers: List[List[int]], people: List[int]) -> List[int]:
         starts = sorted([start for start, _ in flowers])
